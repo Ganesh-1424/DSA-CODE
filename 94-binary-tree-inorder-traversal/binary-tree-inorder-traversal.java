@@ -13,19 +13,34 @@
  *     }
  * }
  */
-class Solution {
+// class Solution {
+//     public static void inorderTravers(TreeNode root,List<Integer>ls){
+//         if(root==null){
+//             return;
+//         }
+        
+//         inorderTravers(root.left,ls);
+//         ls.add(root.val);
+//         inorderTravers(root.right,ls);
+//     }
+//     public List<Integer> inorderTraversal(TreeNode root) {
+//         List<Integer>ls=new ArrayList<>();
+//         inorderTravers(root,ls);
+//         return ls;
+//     }
+// }
+class Solution{
     public static void inorderTravers(TreeNode root,List<Integer>ls){
         if(root==null){
             return;
         }
-        
         inorderTravers(root.left,ls);
         ls.add(root.val);
         inorderTravers(root.right,ls);
     }
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer>ls=new ArrayList<>();
+    public List<Integer> inorderTraversal(TreeNode root){
+        List<Integer> ls=new ArrayList<>();
         inorderTravers(root,ls);
-        return ls;
+        return ls;  
     }
 }
