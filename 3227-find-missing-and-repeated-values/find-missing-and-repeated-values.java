@@ -9,7 +9,7 @@ class Solution {
         }
         int repeated=0;
         int missing=0;
-        for(int i=1;i<=n*n;i++){
+        for(int i=0;i<=n*n;i++){
             if(freq[i]==2){
                 repeated=i;
             }
